@@ -1,0 +1,1032 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+section{
+   
+   
+    margin: 0 auto;
+}
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Keeps it on top of other elements */
+    background-color: white; 
+  }
+  
+.topnav{
+    background-color: orange;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    
+}
+.call{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;;
+}
+.call p{
+    margin: 15px;
+}
+.call i{
+    margin: 5px;
+}
+.account{
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex; 
+} 
+.openmenu{
+    display: none;
+}
+.nav{
+  
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    
+}
+.menus{
+
+   
+}
+.menus ul{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+.menus ul li{
+    list-style: none;
+    margin: 20px;
+    cursor: pointer;
+}
+.icons{
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+.icons i{
+    margin: 10px;
+    font-size: 1.5vw;
+   
+}
+.icons i span{
+    color: red;
+    margin-left: 3px;
+    margin-bottom: 10vh;
+    position: absolute;
+}
+/* cart */
+.cartpage{
+    width: 70%;
+    margin: 80px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cartinfo{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: white;
+    background: #ff523b;
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #ff523b;
+    font-size: 12px;
+}
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.totalprice{
+    display: flex;
+    justify-content: flex-end;
+}
+.totalprice table{
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 400px ;
+}
+th:last-child{
+    text-align: right;
+}
+
+ td:last-child{
+    text-align: right;
+}
+.payment{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+.payment button{
+    padding: 10px;
+    border: none;
+    margin: 10px;
+    width: 130px;
+    background-color: rgb(42, 215, 42);
+    color: white;
+}
+@media only screen and (max-width:800px){
+    .cartpage{
+        width: 98%;
+    }
+    .cartinfo p{
+       display: none;
+    }
+}
+/* start of homepage */
+
+.homepage{
+    background-color: rgb(235, 233, 233);
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+
+.left{
+    height: 70vh;
+    width: 27%;
+    list-style: none;
+    margin: 20px;
+    
+    text-align: left;
+   
+   
+}
+
+.left button{
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: orange;
+    color: white;
+}
+.center{
+    text-align: left;
+    height: 70vh;
+    width: 45%;
+    
+}
+.carousel-item{
+  
+    height: 70vh;
+   
+}
+.carousel-item img{
+    height: 70vh;
+}
+.carousel-item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.carousel-caption{
+    bottom: 180px;
+   
+}
+.carousel-caption h5{
+    font-size: 5vw;
+}
+.carousel-caption button{
+    padding: 10px;
+    border: none;
+    width: 120px;
+    border-radius: 10px;
+}
+
+
+
+.right{ 
+    height: 70vh;
+    width: 24%;
+  background-image: url(img/shoe1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+/* end of homepage */
+.empower{
+   
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.favourite{
+   
+    height: auto;
+}
+.favouritehed{
+   
+    text-align: center;
+}
+.favourite .shoes{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.favourite .shoe1{
+   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    height: 52vh;
+    width: 22%;
+    margin: 1vw;
+    line-height: 2vh;
+}
+.favourite .shoe1 img{
+    width: 70%;
+    height: 60%;
+    margin: 1vw;
+}
+.favourite .shoe1  button{
+    border: none;
+    padding: 12px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 10px;
+}
+/* end of favourites */
+.topcollections{
+    margin-top: 5vh;
+    height: auto;
+}
+.topcollectionshed{
+    text-align: center;
+}
+.collection{
+    height: auto;
+    margin-top: 7vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.col1{
+   
+    width: 200px;
+    margin: 1vw;
+    border-radius: 50%;
+}
+.col1 img{
+    border: 5px solid rgb(252, 61, 255);
+    width: 200px;
+    height: 200px;
+    
+    border-radius: 50%;
+}
+.col1 p{
+    margin-top: 3vh;
+}
+/* end of collection */
+.services{
+    background-color: gainsboro;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+   
+}
+.service{
+    
+    width: 22%;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.service img{
+    width: 3vw;
+}
+.service h2{
+    font-size: 2vw;
+}
+
+
+
+
+.shop{
+   
+    height: auto;
+}
+.shophed{
+   
+    text-align: center;
+}
+.shop .shoes{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.shop .shoe1{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    height: 55vh;
+    width: 22%;
+    margin: 1vw;
+    line-height: 2vh;
+}
+.shop .shoe1 img{
+    width: 70%;
+    height: 55%;
+    margin: 1vw;
+}
+.shop .shoe1  button{
+    border: none;
+    padding: 12px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 10px;
+}
+.discount{
+    
+    height: 20px;
+    width: 30px;
+    background-color: green;
+    color: white;
+    margin: 2px;
+    border-radius: 4px;
+   
+}
+.discount p{
+    font-size: 10px;
+    text-align: center;
+    
+}
+/* end of shop */
+.newto{
+    background-color: black;
+    color: white;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+
+}
+.newto1{
+   
+    width: 30%;
+    height: 40vh;
+    text-align: left;
+}
+.newto1 form input{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 200px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+}
+.newto1 form button{
+    border-radius: 5px;
+   padding: 6.5px;
+    border: none;
+    background-color: orange;
+    color: white;
+    font-size: 12x;
+    width: 100px;
+}
+.downloads i{
+    font-size: 4vh;
+    margin-right: 5px;
+}
+.downloads{
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    display: flex; 
+}
+.downloads p{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;   
+    line-height: 1.9vh;
+}
+.downloads p:hover{
+    color: orange;
+}
+
+/* footer */
+footer{
+    background-color: orange;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+.ft1 h5{
+    color: black;
+}
+.ft2 h5{
+    color: black;
+}
+.ft1{
+    text-align: left;
+    height: 50vh;
+    width: 35%;
+}
+.ft2{
+    text-align: left;
+    height: 50vh;
+    width: 19%;
+}
+.ft2 li{
+    margin-top: 20px;
+}
+.ft2 li:hover{
+    color: black;
+    cursor: pointer;
+
+}
+.ft2 li i{
+    margin-right: 5px;
+}
+.ft2 .media{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;  
+}
+.ft2 .media i{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+    color: black;
+    border: 1px solid white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+
+}
+.ft2 .media i:hover{
+   
+    color: white;
+}
+/* end of footer */
+.bottom{
+    background-color: black;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    section{
+       
+       
+        margin: 0 auto;
+    }
+    
+    .topnav{
+        background-color: orange;
+        color: white;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        display: flex;
+    }
+    .call{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;;
+    }
+    .call p{
+        margin: 15px;
+    }
+    .call i{
+        margin: 5px;
+    }
+    .account{
+        margin: 15px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: none; 
+    } 
+
+    .openmenu{
+       margin-right: 15px;
+      z-index: 1000;
+        display: block;
+        font-size: 6vw;
+    }
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    text-align: left;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 25PX;
+    color: #818181;
+    display: block;
+    transition: 0.5s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  
+
+    .nav{
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        
+    }
+    .menus{
+    display: none;
+       
+    }
+    .menus ul{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+    }
+    .menus ul li{
+        list-style: none;
+        margin: 20px;
+        cursor: pointer;
+    }
+    .icons{
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+    }
+    .icons i{
+        margin: 10px;
+        font-size: 5.5vw;
+        color: black;
+    }
+    
+    /* start of homepage */
+    
+    .homepage{
+       
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+    }
+    
+    
+    .left{
+        
+        display: none;
+        margin: 20px;
+       
+       
+        border-bottom: 1px solid rgb(167, 164, 164);
+    }
+    .left ul li:hover{
+        color: black;
+    }
+    .left ul li:last-child{
+        border-bottom: none;
+    }
+    .left ul li i{
+        color: white;
+        margin-right: 10px;
+    }
+    .center{
+        text-align: left;
+        height: 70vh;
+        width: 100%;
+        
+    }
+    .carousel-item{
+      
+        height: 70vh;
+       
+    }
+    .carousel-item img{
+      
+        height: 70vh;
+        width: 90%;
+    }
+    .carousel-item::before{
+        content: "";
+        display: block;
+        position: absolute;
+       
+        background-color: black;
+        opacity: 0.4;
+    }
+    
+    .carousel-caption{
+       
+        display: block;
+        display: block !important;
+        position: absolute;
+        margin-bottom: 26vh;
+        
+    }
+    .carousel-caption h5{
+        font-size: 5vw;
+    }
+    .carousel-caption button{
+        padding: 10px;
+        border: none;
+        width: 120px;
+        border-radius: 10px;
+    }
+    
+    
+    
+    .right{ 
+        display: none;
+      
+    
+    }
+    /* end of homepage */
+    .empower{
+       
+        height: 30vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .favourite{
+       
+        height: auto;
+    }
+    .favouritehed{
+       
+        text-align: center;
+    }
+    .favourite .shoes{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .favourite .shoe1{
+       box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        height: 52vh;
+        width: 90%;
+        margin: 1vw;
+        line-height: 2vh;
+    }
+    .favourite .shoe1 img{
+        width: 70%;
+        height: 60%;
+        margin: 1vw;
+    }
+    .favourite .shoe1  button{
+        border: none;
+        padding: 12px;
+        width: 100px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+    }
+    /* end of favourites */
+    .topcollections{
+        margin-top: 5vh;
+        height: auto;
+    }
+    .topcollectionshed{
+        text-align: center;
+    }
+    .collection{
+        height: auto;
+        margin-top: 7vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .col1{
+       
+        width: 200px;
+        margin: 1vw;
+        border-radius: 50%;
+    }
+    .col1 img{
+        border: 5px solid rgb(252, 61, 255);
+        width: 200px;
+        height: 200px;
+        
+        border-radius: 50%;
+    }
+    .col1 p{
+        margin-top: 3vh;
+    }
+    /* end of collection */
+    .services{
+        background-color: gainsboro;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+       
+    }
+    .service{
+        
+        width: 100%;
+        height: 15vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .service img{
+        width: 6vw;
+    }
+    .service h2{
+        font-size: 4vw;
+    }
+    
+    
+    
+    
+    .shop{
+       
+        height: auto;
+    }
+    .shophed{
+       
+        text-align: center;
+    }
+    .shop .shoes{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .shop .shoe1{
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        height: 55vh;
+        width: 90%;
+        margin: 1vw;
+        line-height: 2vh;
+    }
+    .shop .shoe1 img{
+        width: 70%;
+        height: 55%;
+        margin: 1vw;
+    }
+    .shop .shoe1  button{
+        border: none;
+        padding: 12px;
+        width: 100px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+    }
+    .discount{
+        
+        height: 20px;
+        width: 30px;
+        background-color: green;
+        color: white;
+        margin: 2px;
+        border-radius: 4px;
+       
+    }
+    .discount p{
+        font-size: 10px;
+        text-align: center;
+        
+    }
+    /* end of shop */
+    .newto{
+        background-color: black;
+        color: white;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+    .newto1{
+       
+        width: 90%;
+        height: 20vh;
+        text-align: left;
+        margin-top: 5vh;
+    }
+    .newto1 form input{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 200px;
+        border-radius: 5px;
+        text-align: center;
+        border: none;
+    }
+    .newto1 form button{
+        border-radius: 5px;
+       padding: 6.5px;
+        border: none;
+        background-color: orange;
+        color: white;
+        font-size: 12x;
+        width: 100px;
+    }
+    .downloads i{
+        font-size: 4vh;
+        margin-right: 5px;
+    }
+    .downloads{
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        display: flex; 
+    }
+    .downloads p{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;   
+        line-height: 1.9vh;
+    }
+    .downloads p:hover{
+        color: orange;
+    }
+    
+    /* footer */
+    footer{
+        background-color: orange;
+        color: white;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+    .ft1 h5{
+        color: black;
+    }
+    .ft2 h5{
+        color: black;
+    }
+    .ft1{
+        text-align: left;
+        height: 27vh;
+        width: 90%;
+      
+    }
+    .ft2{
+        text-align: left;
+        height: auto;
+        width: 90%;
+        margin-top: 5vh;
+       
+    }
+    .ft2 li{
+        margin-top: 20px;
+    }
+    .ft2 li:hover{
+        color: black;
+        cursor: pointer;
+    
+    }
+    .ft2 li i{
+        margin-right: 5px;
+    }
+    .ft2 .media{
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        display: flex;  
+      
+    }
+    .ft2 .media i{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        margin: 10px;
+        cursor: pointer;
+        color: black;
+        border: 1px solid white;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+    
+    }
+    .ft2 .media i:hover{
+       
+        color: white;
+    }
+    /* end of footer */
+    .bottom{
+        background-color: black;
+        color: white;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    
+  }
